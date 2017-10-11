@@ -4,20 +4,20 @@
 \alias{fake_fish_creator}
 \title{A function to create fake Length/Age relationship for fish}
 \usage{
-fake_fish_creator(n, maxA, noiseK, noiseL, K, Linf)
+fake_fish_creator(n, maxA, K, Linf, noiseK, noiseL)
 }
 \arguments{
 \item{n}{Number of fish captured}
 
 \item{maxA}{Age of the oldest fish captured (years)}
 
-\item{noiseK}{Standard deviation of the population growth rate (mm/years)}
-
-\item{noiseL}{Standard deviation of the population maximum size (mm)}
-
 \item{K}{Mean of the population growth rate (mm/years)}
 
 \item{Linf}{Mean of the population maximum size (mm)}
+
+\item{noiseK}{Standard deviation of the population growth rate (mm/years)}
+
+\item{noiseL}{Standard deviation of the population maximum size (mm)}
 }
 \value{
 A dataframe containing the simulated Age(year) and Length(mm) along with a plot presenting Length(mm) as a function of age(year).
@@ -26,7 +26,7 @@ A dataframe containing the simulated Age(year) and Length(mm) along with a plot 
 This function allows you create fake data, with added noise.
 }
 \examples{
-function(12,32,0,01,10,0.5,1200)
+fake_fish_creator(12,32,0,01,10,0.5,1200)
 }
 \keyword{Bertalanffy,}
 \keyword{Fish,}
