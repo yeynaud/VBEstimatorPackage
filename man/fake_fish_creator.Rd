@@ -11,13 +11,13 @@ fake_fish_creator(n, maxA, K, Linf, noiseK, noiseL)
 
 \item{maxA}{Age of the oldest fish captured (years)}
 
-\item{K}{Mean of the population growth rate (mm/years)}
+\item{K}{Mean growth rate (mm/years)}
 
-\item{Linf}{Mean of the population maximum size (mm)}
+\item{Linf}{Mean maximum size (mm)}
 
-\item{noiseK}{Standard deviation of the population growth rate (mm/years)}
+\item{noiseK}{Standard deviation of the growth rate (mm/years)}
 
-\item{noiseL}{Standard deviation of the population maximum size (mm)}
+\item{noiseL}{Standard deviation of the maximum size (mm)}
 }
 \value{
 A dataframe containing the simulated Age(year) and Length(mm) along with a plot presenting Length(mm) as a function of age(year).
