@@ -19,7 +19,7 @@ LKest(Length, Age, plotVBGF, t0_estim, na.rm, boot, boundary)
 
 \item{boot}{if \code{TRUE} plot 1000 parameters estimations value issued through a boostrap procedure (the corresponding 95 percent confidence interval is plotted as a dotted line)}
 
-\item{boundary}{if TRUE, value of K bounded between 0 and 1}
+\item{boundary}{if \code{TRUE}, value of K bounded between 0 and 1}
 }
 \value{
 A list containing (i) the Von Bertalanffy growth curve fitted values, (ii) the Von Bertalanffy growth curve parameters , (iii) the confidence interval fitted values obtained using the appraoch described in Kimura (1980), (iv) the estimated Von Bertalanffy parameters using the approach described in Kimura (1980), and (v) the r-squared value.

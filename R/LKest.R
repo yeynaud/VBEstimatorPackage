@@ -1,6 +1,6 @@
 #' Linf and K estimator for a Von Bertalanffy Age/Length relationship
 #'
-#' This function allows you to estimates the growth rate \code{K} and the theoretical maximum size \code{Linf} from a dataset made of \code{Age} and \code{length} measurements using teh method described in Kimura D.K.,(1980) Likelihood methods for the von Bertalanffy growth curve. Fishery Bulletin 77: 765–776.
+#' This function allows you to estimates the growth rate \code{K} and the theoretical maximum size \code{Linf} from a dataset made of \code{Age} and \code{length} measurements using the method described in Kimura D.K.,(1980) Likelihood methods for the von Bertalanffy growth curve. Fishery Bulletin 77: 765–776.
 
 #' @param Length a vector comtaining the length measurements
 #' @param Age  a vector comtaining the age measurements
