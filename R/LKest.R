@@ -4,11 +4,11 @@
 
 #' @param Length a vector comtaining the length measurements
 #' @param Age  a vector comtaining the age measurements
-#' @param plotVBGF  if \code{TRUE} plot of the VB model, \code{FALSE} does not provide a plot
-#' @param t0_estim  the value of t0 for the model (0 if no better guess is usual)
-#' @param na.rm if \code{TRUE} remove NA in the first and second arguments, \code{FALSE} else
-#' @param boot if \code{TRUE} plot 1000 parameters estimations value issued through a boostrap procedure (the corresponding 95 percent confidence interval is plotted as a dotted line)
-#' @param boundary if \code{TRUE}, value of K bounded between 0 and 1
+#' @param plotVBGF  if \code{TRUE} plot of the VB model, \code{FALSE} does not provide a plot (default to \code{TRUE})
+#' @param t0_estim  the value of t0 for the model (default to 0)
+#' @param na.rm if \code{TRUE} remove NA in the first and second arguments, \code{FALSE} else (default to \code{TRUE})
+#' @param boot if \code{TRUE} plot 1000 parameters estimations value issued through a boostrap procedure (the corresponding 95 percent confidence interval is plotted as a dotted line) - default to \code{FALSE}
+#' @param boundary if \code{TRUE}, value of K bounded between 0 and 1 - default to \code{FALSE}
 #' @return A list containing (i) the Von Bertalanffy growth curve fitted values, (ii) the Von Bertalanffy growth curve parameters , (iii) the confidence interval fitted values obtained using the appraoch described in Kimura (1980), (iv) the estimated Von Bertalanffy parameters using the approach described in Kimura (1980), and (v) the r-squared value.
 #' @keywords Fish, Von Bertalanffy, Linf, K, estination, Kimura, boostrap
 #' @export
@@ -16,7 +16,7 @@
 #' no example so far, chill
 
 
-LKest<-function(Length,Age,plotVBGF,t0_estim,na.rm,boot,boundary){
+LKest<-function(Length,Age,plotVBGF=TRUE,t0_estim=0,na.rm=TRUE,boot=FALSE,boundary=FALSE){
 
 
 if(na.rm){
